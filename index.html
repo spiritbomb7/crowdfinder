@@ -12,8 +12,8 @@
         <nav>
             <ul>
                 <li><a href="#vision">Vision Statement</a></li>
-                <li><a href="#users">Intended Users</a></li>
                 <li><a href="#features">Major Functionality (Features)</a></li>
+                <li><a href="#video"> Screen Recording</a></li>
                 <li><a href="#contributors">Contributors</a></li>
                 <li><a href="#postmortem">Postmortem</a></li>
             </ul>
@@ -53,16 +53,8 @@
                 This can take a very long time in addition to finding a good window for an activity that everyone can attend.  </p>
         </section>
 
-        <section id="users">
-            <h2>Intended Users</h2>
-            <p>CrowdFinder is primarily designed for busy people who want an easy way to plan events with others.
-                It is valuable because people's availability is visible from the start, and you don't have to spend time individually reaching out and waiting for responses.
-                This creates a way for people to communicate about events more effectively all in one place.
-                For people with larger constraints, they can even have times suggested to them to streamline planning events further.</p>
-        </section>
-
         <section id="features">
-            <h2>Major Functionality</h2>
+            <h2>Major Functionality (Features)</h2>
             <ul>
                 <li><strong>Calendar View:</strong> Visually see  when you and your contacts are available. This calendar follows a simple style that lets you see your availability in coloured blocks. It can be viewed in terms of days or months.</li>
                 <li><strong>Availability:</strong> Add and edit your availability on the calendar. It is assumed you are busy during blank spaces on their calendar, and are only free during specified times and dates.</li>
@@ -76,34 +68,37 @@
             </ul>
         </section>
 
+        <section id="video">
+            <h2>Feature Demonstration</h2>
+            <video controls width="640">
+                <source src="joined-all.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+
         <section id="contributors">
             <h2>Contributors</h2>
             <ul>
                 <li><strong>Roman Tebel:</strong> Description of skills.</li>
                 <li><strong>Karin Plavin:</strong> Description of skills.</li>
-                <li><strong>Jackie Mei:</strong> Description of skills.</li>
+                <li><strong>Jackie Mei:</strong> Throughout the project I helped with multiple features that included calendar, events creation, recommended time and availability. For calendar I did the the recyclerview that displayed the cells of the calendar and as well as the logic involving it such as populating the cells. For availability and event creation I worked on the layout of the page and the dialog that acquires input from the user. For time reccomendation, I made an algorithm that uses users availability time to calculates and return time ranges where the most people are available. From this project, I learned how to work a group using git and as well as how important communication to ensure the project goes smoothly.</li>
                 <li><strong>Mahmud Ali:</strong> Description of skills.</li>
                 <li><strong>Manisha Gurukumar: </strong>I contributed to the Contacts, Accounts and Event History feature throughout the duration of the project. While implementing these features alongside 
                 my group I learned a lot about the communication between us. I am now able to more effectively communicate what I am working on, struggling with and when I need help. This was also my first 
-                time working with a n-tier architecture and I feel as though I have a much better understanding of how elemtns in an application will interact to work properly. Lastly, I was able to learn 
-                how to make use of desgin patterns in the code I write. This will help me write cleaner code in the future. </li>
+                time working with a n-tier architecture and I feel as though I have a much better understanding of how elements in an application will interact to work properly. Lastly, I was able to learn 
+                how to make use of design patterns in the code I write. This will help me write cleaner code in the future. </li>
             </ul>
         </section>
 
         <section id="postmortem">
             <h2>Postmortem</h2>
-            <p>Discuss your development experience, including both positive and negative aspects.</p>
-        
-            <section id="architecture">
-                <h3>Overall Architecture</h3>
-                <p>Describe the overall architecture of your system, particularly if it is different from the demo system.</p>
-            </section>
         
             <section id="what-went-right">
                 <h3>What Went Right</h3>
                 <ul> 
-                    <li> </li>
-                
+                    <li> Vast majority of our features were completed. Only one of them couldn't be finished due to the time restraints.</li>
+                    <li> Everyone would assign themselves a task and be sure to complete it. If someone could not, we were good to communicate it with each other.</li>
+                    <li> The plans we made after the iteration 2 retrospective went well. We held our mid-iteration meeting as planned and attendance was 100%. This improved communication for the duration of the iteration.</li>
                 </ul>
                
             </section>
@@ -118,65 +113,50 @@
                     and adopted a system of just assigning ourselves tasks. This worked well for the first half, but for the remaining tasks such as testing and 
                     documentation there was some confusion on who would do what. </li>
 
-                    <li></li>
+                    <li> We had set a soft deadline for the completion of our iteration 3 features during the retrospective at the end of iteration 2. This deadline did not go 
+                        as well as planned as we were not able to finish all of the features by then, but we were communicating about these delays during iteration 2.
+                    </li>
                 </ul>
             </section>
         
             <section id="improvements">
                 <h3>Improvements</h3>
-                <p>Discuss what you would do differently if you had the chance to start over.</p>
-            </section>
-        
-            <section id="project-size">
-                <h3>Project Size</h3>
-                <p>Describe the size of the project (number of methods, classes, etc.). How much of this is devoted to each major system component? Include any other quantifiables, like hours spent on tasks.</p>
-            </section>
-        
-            <section id="time-management">
-                <h3>Time Management</h3>
-                <p>Discuss what took the most time, what took the least, and any surprises.</p>
-            </section>
-        
-            <section id="design-decisions">
-                <h3>Design Decisions</h3>
-                <p>Describe any particular design smells or brilliant design decisions.</p>
+                    <li> Asking each other for help on aspects of Android Studio that they had worked on previously. </li>
+                    <li> Actively seeking out the team member who worked on a feature that newer features are being built upon. </li>
             </section>
         
             <section id="bugs">
                 <h3>Outstanding Bugs</h3>
-                <p>Discuss any outstanding bugs.</p>
+                <li>Calendar View: Calendar sometimes gets compressed when the navigation bar changes from invisible to visible. It will also sometimes decompress
+                    back to its intended size, although it is random.
+                </li>
+                <li>Event Deletion with Comments: When trying to delete an event that has comments under it, the event will not get deleted due to an SQL exception raised 
+                    due to a comment on the event. 
+                </li>
             </section>
         
-            <section id="feature-performance">
-                <h3>Feature Performance</h3>
-                <p>Describe any features that worked better than expected.</p>
-            </section>
-        
-            <section id="additional-technologies">
-                <h3>Additional Technologies</h3>
-                <p>Discuss if you are using any technologies other than what was required (e.g., JMock, GUI builders, etc.).</p>
-            </section>
-        
-            <section id="techniques">
-                <h3>Specific Techniques</h3>
-                <p>Discuss if you are using any specific techniques covered in the course (TDD, pair programming, scrums, etc.).</p>
-            </section>
-        
-            <section id="project-evolution">
-                <h3>Project Evolution</h3>
-                <p>For the most part our project worked out as predicted. We were ablet to implement all of the features we had dicussed except for the Groups feature. This was due to 
-                    running low on time in iteration 3 and Groups required some major changes to our HSQL database which we did not have time for.
+            <section id="features">
+                <h3>Features</h3>
+                <p>For the most part our project worked out as predicted. We were able to implement all of the features we had dicussed except for the Groups feature. This was due to 
+                    running low on time in iteration 3 and Groups required some major changes to our HSQL database which we did not have time for. Some of the features that we had planned
+                    for added value beyond the basic funcationality needed for the application, like comments.
                 </p>
             </section>
         
             <section id="team-development">
                 <h3>Team Development</h3>
-                <p>Discuss what you learned about team or large project development. What will you start doing, keep doing, or stop doing next time?</p>
+                <li> Discord Web Hook: Sent out notifications whenever changes were made to the repository. We would keep using this as it improved communication and kept other team members up to date.</li>
+                <li> Visual Planning Tools (Lucid Spark): Where we put our initial visual designs of our app in a centralized and easy to edit space. Having the visuals also greatly helped implement the initial visuals of our application.</li>
+                <li> More Structured Task Delegation: It would be nice to have someone specifically who is in charge of delegating tasks to the team members, keeping track of progress and managing the milesones on GitLab. </li>
             </section>
         
             <section id="conclusions">
                 <h3>Conclusions</h3>
-                <p>Draw any conclusions from what you've done. Reflect on the overall experience and lessons learned.</p>
+                <li> No matter how much planning is done, little things will always come up that are time consuming especially when using an unfamiliar tool. Knowing this, 
+                    it's beneficial to allocate extra time and remain flexible to account for unexpected issues that will always arise.
+                </li>
+                <li>Our overall experience was that everyone is the team contributed a fair amount to the project. This lead to a confidence in getting things done and in our team members.</li>
+                <li> Things will break with even small changes you make to the code. It's important to be attentive as you make changes to reduce errors and bugs.</li>
             </section>
         </section>
         
