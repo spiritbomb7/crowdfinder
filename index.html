@@ -13,7 +13,7 @@
             <ul>
                 <li><a href="#vision">Vision Statement</a></li>
                 <li><a href="#users">Intended Users</a></li>
-                <li><a href="#functionality">Major Functionality</a></li>
+                <li><a href="#features">Major Functionality (Features)</a></li>
                 <li><a href="#contributors">Contributors</a></li>
                 <li><a href="#postmortem">Postmortem</a></li>
             </ul>
@@ -61,23 +61,19 @@
                 For people with larger constraints, they can even have times suggested to them to streamline planning events further.</p>
         </section>
 
-        <section id="functionality">
+        <section id="features">
             <h2>Major Functionality</h2>
-            <p>In CrowdFinder you can visually see your availability on a calendar indicating times during which you are fully available. 
-                Empty time slots in the calendar indicate that you are busy. 
-                Along with your own availability, you can view the availability of people you are connected with, called contacts. 
-                These contacts are the people who you create events with by finding overlapping availability.
-                
-                Creating events involves selecting the contacts that you would like to invite. You can select a date and time according to all contacts' availabilities. 
-                Contacts invited to events will be asked to either accept or reject the event request to indicate whether they will attend. 
-                They will also be able to suggest adjustments such as different date or time, by commenting on the event request. 
-                If there is a group of people you often see and plan events with, a group can be created.
-                
-                The events you have been invited to and created will be collected in an event history, including events that have happened and those that are yet to happen. 
-                If you have declined an upcoming event, you can find it in the event history and accept it if you changed your mind. 
-                Likewise, you can decline an event that you previously accepted if your plans change.
-                
-                CrowdFinder can also suggest an optimal time for an event when most contacts are available.</p>
+            <ul>
+                <li><strong>Calendar View:</strong> Visually see  when you and your contacts are available. This calendar follows a simple style that lets you see your availability in coloured blocks. It can be viewed in terms of days or months.</li>
+                <li><strong>Availability:</strong> Add and edit your availability on the calendar. It is assumed you are busy during blank spaces on their calendar, and are only free during specified times and dates.</li>
+                <li><strong>Event Creation:</strong> Plan and organize events through event creation. An event can be any activity that includes any number of people. Created events will appear on the calendar of every user that is invited. </li>
+                <li><strong>Accounts: </strong> People who wish to use Crowd Finder will be greeted with a welcome page allowing them to either login or register. Once registered, access your account on any device with CrowdFinder.</li>
+                <li><strong>Contacts:</strong> Look other users up and connect. Connected users remain in each other's contacts for quick access when planning events. Inspecting contacts will allow users to see the contact's availability as well.</li>
+                <li><strong>Event Request:</strong> Invite any of your contacts to the events you plan. An invitation will always be sent to the invited contacts. Contacts then have the option to either accept or decline the invitation, notifying the original event organizer of how many people are likely to attend.</li>
+                <li><strong>Event History:</strong> Users can view past events on their calendar and in Event History. If a user declines an invitation to an event, the event will not appear in their calendar, but users can still find it on the events history page.</li>
+                <li><strong>Comments:</strong> Express your thoughts about event's that you are invited to so that the organizer gets some feedback while planning the event. </li>
+                <li><strong>Suggest A Time:</strong> Recommends not just a date, but the best time for an event. The best time is the one during which the highest number of desired contacts can attend an event.</li>
+            </ul>
         </section>
 
         <section id="contributors">
@@ -87,19 +83,90 @@
                 <li><strong>Karin Plavin:</strong> Description of skills.</li>
                 <li><strong>Jackie Mei:</strong> Description of skills.</li>
                 <li><strong>Mahmud Ali:</strong> Description of skills.</li>
-                <li><strong>Manisha Gurukumar:</strong> Description of skills.</li>
+                <li><strong>Manisha Gurukumar:</strong> </li>
             </ul>
         </section>
 
         <section id="postmortem">
             <h2>Postmortem</h2>
             <p>Discuss your development experience, including both positive and negative aspects.</p>
+        
+            <section id="architecture">
+                <h3>Overall Architecture</h3>
+                <p>Describe the overall architecture of your system, particularly if it is different from the demo system.</p>
+            </section>
+        
+            <section id="what-went-right">
+                <h3>What Went Right</h3>
+                <p>Discuss what went well in the development process.</p>
+            </section>
+        
+            <section id="what-went-wrong">
+                <h3>What Went Wrong</h3>
+                <p>Discuss what went wrong in the development process.</p>
+            </section>
+        
+            <section id="improvements">
+                <h3>Improvements</h3>
+                <p>Discuss what you would do differently if you had the chance to start over.</p>
+            </section>
+        
+            <section id="project-size">
+                <h3>Project Size</h3>
+                <p>Describe the size of the project (number of methods, classes, etc.). How much of this is devoted to each major system component? Include any other quantifiables, like hours spent on tasks.</p>
+            </section>
+        
+            <section id="time-management">
+                <h3>Time Management</h3>
+                <p>Discuss what took the most time, what took the least, and any surprises.</p>
+            </section>
+        
+            <section id="design-decisions">
+                <h3>Design Decisions</h3>
+                <p>Describe any particular design smells or brilliant design decisions.</p>
+            </section>
+        
+            <section id="bugs">
+                <h3>Outstanding Bugs</h3>
+                <p>Discuss any outstanding bugs.</p>
+            </section>
+        
+            <section id="feature-performance">
+                <h3>Feature Performance</h3>
+                <p>Describe any features that worked better than expected.</p>
+            </section>
+        
+            <section id="additional-technologies">
+                <h3>Additional Technologies</h3>
+                <p>Discuss if you are using any technologies other than what was required (e.g., JMock, GUI builders, etc.).</p>
+            </section>
+        
+            <section id="techniques">
+                <h3>Specific Techniques</h3>
+                <p>Discuss if you are using any specific techniques covered in the course (TDD, pair programming, scrums, etc.).</p>
+            </section>
+        
+            <section id="project-evolution">
+                <h3>Project Evolution</h3>
+                <p>Describe how the project changed from your initial vision or stories, or if it worked out as predicted.</p>
+            </section>
+        
+            <section id="team-development">
+                <h3>Team Development</h3>
+                <p>Discuss what you learned about team or large project development. What will you start doing, keep doing, or stop doing next time?</p>
+            </section>
+        
+            <section id="conclusions">
+                <h3>Conclusions</h3>
+                <p>Draw any conclusions from what you’ve done. Reflect on the overall experience and lessons learned.</p>
+            </section>
         </section>
+        
         
     </main>
 
     <footer>
-        <p> CrowdFinder. Group 9.</p>
+        <p> CrowdFinder by Group 9</p>
     </footer>
 </body>
 </html>
